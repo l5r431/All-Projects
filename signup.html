@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body>
+    <header>
+        <h1>Register to access this site.</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Register</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Info.</legend>
+                    <label for="name">Name:</label><br>
+                    <input type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Name" 
+                    required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="example@gmail.com" required><br><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel"
+                    pattern="[0-9]{10}"
+                    title="Enter 10 digits"
+                    id="phone" 
+                    name="phone" 
+                    placeholder="0712345678" 
+                    required><br><br>
+
+                    <label for="country">Country:</label><br>
+                    <select name="country" id="country" required>
+                        <option value="" disabled selected>-select country-</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Rwanda">Rwanda</option>
+                    </select><br><br>
+
+                    <label for="age">Age:</label><br>
+                    <input type="number" 
+                    id="age" 
+                    name="age" 
+                    placeholder="18+" 
+                    required min="18" max="100"><br><br>
+
+                </fieldset><br><br>
+
+                <fieldset>
+                    <legend>Gender.</legend>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Talent.</legend>
+                    <input type="checkbox" id="rap" name="talent" value="rap">
+                    <label for="rap">Rap</label><br>
+                    <input type="checkbox" id="rnb" name="talent" value="rnb">
+                    <label for="rnb">RnB</label><br>
+                    <input type="checkbox" id="raggae" name="talent" value="raggae">
+                    <label for="raggae">Raggae</label><br>
+                    <input type="checkbox" id="gospel" name="talent" value="gospel">
+                    <label for="gospel">Gospel</label>
+                </fieldset><br><br>
+                <button type="reset">Reset</button>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+        <footer>
+            <p>®Rights Reserved.</p>
+            <p>Created by: Great minds.</p>
+        </footer>
+</body>
+</html>
